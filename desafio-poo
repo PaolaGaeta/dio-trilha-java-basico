@@ -1,0 +1,45 @@
+classDiagram
+    %% Definindo as interfaces
+    class Iphone {
+        <<interface>>
+    }
+
+    class ReprodutorMusical {
+        <<interface>>
+        +tocar()
+        +pausar()
+        +selecionarMusica(musica: String)
+    }
+
+    class AparelhoTelefonico {
+        <<interface>>
+        +ligar(numero: String)
+        +atender()
+        +iniciarCorreioVoz()
+    }
+
+    class NavegadorNaInternet {
+        <<interface>>
+        +exibirPagina(url: String)
+        +adicionarNovaAba()
+        +atualizarPagina()
+    }
+
+    %% Definindo as classes concretas
+    class Ipod {
+    }
+
+    class UnboxingDevice {
+    }
+
+    class InternetExplores {
+    }
+
+    %% Relacionamentos
+    Iphone <|-- ReprodutorMusical
+    Iphone <|-- AparelhoTelefonico
+    Iphone <|-- NavegadorNaInternet
+
+    ReprodutorMusical <|-- Ipod
+    AparelhoTelefonico <|-- UnboxingDevice
+    NavegadorNaInternet <|-- InternetExplore
