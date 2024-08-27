@@ -29,10 +29,7 @@ classDiagram
     class Ipod {
     }
 
-    class UnboxingDevice {
-    }
-
-    class InternetExplores {
+    class Safari {
     }
 
     %% Relacionamentos
@@ -41,5 +38,5 @@ classDiagram
     Iphone <|-- NavegadorNaInternet
 
     ReprodutorMusical <|-- Ipod
-    AparelhoTelefonico <|-- UnboxingDevice
-    NavegadorNaInternet <|-- InternetExplore
+    AparelhoTelefonico <|-- Phone
+    NavegadorNaInternet <|-- Safari
